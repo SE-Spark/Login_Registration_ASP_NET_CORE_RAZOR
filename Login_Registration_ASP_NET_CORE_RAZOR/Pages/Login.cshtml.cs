@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Login_Registration_ASP_NET_CORE_RAZOR.ViewModel;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -34,7 +33,7 @@ namespace Login_Registration_ASP_NET_CORE_RAZOR.Pages
                 {
                     if(returnUrl==null || returnUrl == "/")
                     {
-                        return RedirectToPage("Index");
+                        return RedirectToPage("Home");
                     }
                     else
                     {
